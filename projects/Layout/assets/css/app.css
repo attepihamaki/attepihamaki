@@ -1,0 +1,79 @@
+/*==============================================================
+GENERAL
+==============================================================*/
+
+:root {
+	--color-typography-1: #fafafa;
+	--color-typography-2: #18181b;
+	--color-typography-3: #a1a1aa;
+	--color-background-1: #09090b;
+	--color-background-2: #18181b;
+	--color-primary-1: #1d4ed8;
+	--color-primary-2: #1d4ed8;
+	--color-secondary-1: #27272a;
+	--color-secondary-2: #212124;
+	--color-transparent-1: rgba(33,33,36,0.0);
+	--color-transparent-2: rgba(33,33,36,1.0);
+	--color-border-1: #27272a;
+
+
+	--radius: 0.500rem;
+
+	--main-background: rgba(10,10,10,1.0);
+	--main-foreground: rgba(250,250,250,1.0);
+
+	--card-background: rgba(23,23,23,1.0);
+	--card-foreground: rgba(250,250,250,1.0);
+
+	--sidebar-background: rgba(23,23,23,1.0);
+	--sidebar-foreground: rgba(250,250,250,1.0);
+
+	--popover-background: rgba(38,38,38,1.0);
+	--popover-foreground: rgba(250,250,250,1.0);
+
+	--muted-background: rgba(38,38,38,1.0);
+	--muted-foreground: rgba(161,161,161,1.0);
+
+	--primary-background: rgba(68,111,209,1.0);
+	--primary-foreground: rgba(250,250,250,1.0);
+
+	--secondary-background: rgba(38,38,38,1.0);
+	--secondary-foreground: rgba(250,250,250,1.0);
+
+	--destructive-background: rgba(210,67,59,1.0);
+	--destructive-foreground: rgba(250,250,250,1.0);
+
+	--border: rgba(250,250,250,0.1);
+	--input: rgba(250,250,250,0.15);
+	--ring: rgba(68,111,209,1.0);
+}
+
+/*==============================================================
+THEMES
+==============================================================*/
+
+html[data-theme='light'] {
+	--color-typography-1: #09090b;
+	--color-typography-2: #fafafa;
+	--color-typography-3: #71717a;
+	--color-background-1: #ffffff;
+	--color-background-2: #fafafa;
+	--color-primary-1: #1d4ed8;
+	--color-primary-2: #1d4ed8;
+	--color-secondary-1: #f4f4f5;
+	--color-secondary-2: #212124;
+	--color-border-1: #e4e4e7;
+}
+
+html[data-theme='dark'] {
+	--color-typography-1: #fafafa;
+	--color-typography-2: #18181b;
+	--color-typography-3: #a1a1aa;
+	--color-background-1: #09090b;
+	--color-background-2: #18181b;
+	--color-primary-1: #1d4ed8;
+	--color-primary-2: #1d4ed8;
+	--color-secondary-1: #27272a;
+	--color-secondary-2: #212124;
+	--color-border-1: #27272a;
+}

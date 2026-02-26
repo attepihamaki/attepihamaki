@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Layout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link type="image/png" rel="icon" sizes="32x32" href="assets/media/favicon/favicon-32x32.png">
+	<link type="image/png" rel="icon" sizes="128x128" href="assets/media/favicon/favicon-128x128.png">
+	<link type="image/png" rel="icon" sizes="180x180" href="assets/media/favicon/favicon-180x180.png">
+	<link type="image/png" rel="icon" sizes="192x192" href="assets/media/favicon/favicon-192x192.png">
+	<!-- Inter -->
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+	<!-- Main CSS -->
+	<link type="text/css" rel="stylesheet" href="assets/css/app.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+	<!-- Main JS -->
+	<script defer type="text/javascript" src="assets/js/app.js"></script>
+	<script defer type="text/javascript" src="assets/js/main.js"></script>
+</head>
+<body>
+	<!-- Page -->
+	<div class="page-container" id="page-container">
+		<nav class="sidebar" id="sidebar">
+			<div class="sidebar-header">
+				<button type="button" class="button" id="button-profile" data-type="transparent" data-width="full" popovertarget="dropdown-profile" style="padding: 0.625rem;">
+					<div class="flex" data-align="center" data-gap="S">
+						<div class="flex-item" data-size="default">
+							<div class="badge" data-type="primary">
+								<svg class="icon" width="1.000rem" height="1.375rem" aria-hidden="true">
+									<use href="#icon-rectangle"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="flex-item" data-size="flex">
+							<h4 class="text" data-type="profile-heading">Control UI</h4>
+							<p class="text" data-type="profile-paragraph">Atte Pihamäki</p>
+						</div>
+						<div class="flex-item" data-size="default">
+							<svg class="icon" width="0.750rem" height="1.375rem" aria-hidden="true">
+								<use href="#icon-chevron-down"></use>
+							</svg>
+						</div>
+					</div>
+				</button>
+				<div class="dropdown" id="dropdown-profile" data-position="left" data-width="full" anchor="button-profile" popover>
+					<div class="dropdown-content">
+						<ul class="dropdown-list">
+							<li class="dropdown-item">
+								<button type="button" class="dropdown-button" id="button-account">
+									<div class="flex" data-align="center" data-gap="S">
+										<div class="flex-item">
+											<svg class="icon" width="0.875rem" height="1.375rem" aria-hidden="true">
+												<use href="#icon-account"></use>
+											</svg>
+										</div>
+										<div class="flex-item">Account</div>
+									</div>
+								</button>
+							</li>
+							<li class="dropdown-item">
+								<button type="button" class="dropdown-button" id="button-notifications">
+									<div class="flex" data-align="center" data-gap="S">
+										<div class="flex-item">
+											<svg class="icon" width="0.875rem" height="1.375rem" aria-hidden="true">
+												<use href="#icon-notifications"></use>
+											</svg>
+										</div>
+										<div class="flex-item">Notifications</div>
+									</div>
+								</button>
+							</li>
+							<li class="dropdown-item">
+								<div class="dropdown-separator"></div>
+							</li>
+							<li class="dropdown-item">
+								<button type="button" class="dropdown-button" id="button-logout">
+									<div class="flex" data-align="center" data-gap="S">
+										<div class="flex-item">
+											<svg class="icon" width="0.875rem" height="1.375rem" aria-hidden="true">
+												<use href="#icon-logout"></use>
+											</svg>
+										</div>
+										<div class="flex-item">Log out</div>
+									</div>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-content">
+				<div class="navigation" id="navigation">
+					<div class="navigation-content">
+						<ul class="navigation-list">
+							<li class="navigation-item">
+								<a class="navigation-link" id="navigation-link-dashboard" href="#/dashboard">Dashboard</a>
+							</li>
+							<li class="navigation-item">
+								<h4 class="navigation-title">Concepts</h4>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link is-active" id="navigation-link-customers" href="#/customers">Customers</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" id="navigation-link-products" href="#/products">Products</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" id="navigation-link-orders" href="#/orders">Orders</a>
+							</li>
+							<li class="navigation-item">
+								<h4 class="navigation-title">Components</h4>
+							</li>
+							<li class="navigation-item">
+								<details class="navigation-details" id="navigation-details-layout" name="navigation-details">
+									<summary class="navigation-summary">
+										<div class="flex" data-align="center" data-gap="S">
+											<div class="flex-item" data-size="flex">Layout</div>
+											<div class="flex-item" data-size="default">
+												<svg class="navigation-icon" width="0.750rem" height="1.375rem" aria-hidden="true">
+													<use href="#icon-chevron-down"></use>
+												</svg>
+											</div>
+										</div>
+									</summary>
+									<ul class="navigation-list">
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-flex" href="#/flex">Flex</a>
+										</li>
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-grid" href="#/grid">Grid</a>
+										</li>
+									</ul>
+								</details>
+							</li>
+							<li class="navigation-item">
+								<details class="navigation-details" id="navigation-details-display" name="navigation-details">
+									<summary class="navigation-summary">
+										<div class="flex" data-align="center" data-gap="S">
+											<div class="flex-item" data-size="flex">Display</div>
+											<div class="flex-item" data-size="default">
+												<svg class="navigation-icon" width="0.750rem" height="1.375rem" aria-hidden="true">
+													<use href="#icon-chevron-down"></use>
+												</svg>
+											</div>
+										</div>
+									</summary>
+									<ul class="navigation-list">
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-avatar" href="#/avatar">Avatar</a>
+										</li>
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-badge" href="#/badge">Badge</a>
+										</li>
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-block" href="#/block">Block</a>
+										</li>
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-button" href="#/button">Button</a>
+										</li>
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-table" href="#/table">Table</a>
+										</li>
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-tooltip" href="#/tooltip">Tooltip</a>
+										</li>
+										<li class="navigation-item">
+											<a class="navigation-link" id="navigation-link-typography" href="#/typography">Typography</a>
+										</li>
+									</ul>
+								</details>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="sidebar-overlay" id="sidebar-overlay"></div>
+		<header class="page-header" id="page-header">
+			<div class="flex" data-align="center" data-gap="M">
+				<div class="flex-item" data-size="default">
+					<button type="button" class="button" id="button-menu" data-type="secondary" aria-label="Menu">
+						<svg class="icon" width="0.875rem" height="1.375rem" aria-hidden="true">
+							<use href="#icon-menu"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="flex-item" data-size="flex">
+					<div class="breadcrumb" id="breadcrumb">
+						<div class="breadcrumb-content">
+							<ol class="breadcrumb-list">
+								<li class="breadcrumb-item">
+									<a class="breadcrumb-link" id="breadcrumb-link-customers" href="#/customers">Customers</a>
+								</li>
+								<li class="breadcrumb-item">
+									<svg class="breadcrumb-icon" width="0.375rem" height="1.375rem" aria-hidden="true">
+										<use href="#icon-chevron-right"></use>
+									</svg>
+								</li>
+								<li class="breadcrumb-item">Add customer</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="flex-item" data-size="default">
+					<button type="button" class="button" id="button-theme" data-type="secondary" aria-label="Theme">
+						<svg class="icon" width="1.000rem" height="1.375rem" aria-hidden="true">
+							<use href="#icon-sun"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page-content" id="page-content">
+			<div class="grid" data-gap="M">
+				<div class="grid-item" data-size="12">
+					<div class="block"></div>
+				</div>
+				<div class="grid-item" data-size="4" data-collapse='L'>
+					<div class="block"></div>
+				</div>
+				<div class="grid-item" data-size="4" data-collapse='L'>
+					<div class="block"></div>
+				</div>
+				<div class="grid-item" data-size="4" data-collapse='L'>
+					<div class="block"></div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<!-- Dialog -->
+	<dialog class="dialog" id="account-dialog">
+		<div class="block" data-width="S">
+			<div class="grid" data-gap="M">
+				<div class="grid-item" data-size="12">
+					<div class="flex" data-gap="S">
+						<div class="flex-item">
+							<h3 class="text">Are you absolutely sure?</h3>
+						</div>
+						<div class="flex-item">
+							<p class="text">This action cannot be undone. This will permanently delete your account and remove your data from our servers.</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item" data-size="12">
+					<div class="flex" data-gap="S">
+						<div class="flex-item">
+							<button type="button" class="button" id="account-dialog-button-confirm" data-type="primary">Confirm</button>
+						</div>
+						<div class="flex-item">
+							<button type="button" class="button" id="account-dialog-button-cancel" data-type="secondary">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</dialog>
+
+	<!-- Notification -->
+	<div class="notification">
+		<div class="notification-content">
+			<ul class="notification-list">
+				<li class="notification-item">
+					<div class="block" data-width="S">
+						<div class="flex" data-align="center" data-gap="M">
+							<div class="flex-item">
+								<p class="text">Your changes have been successfully saved</p>
+							</div>
+							<div class="flex-item">
+								<button type="button" class="button" data-type="secondary" aria-label="Close">
+									<svg class="icon" width="0.875rem" height="1.375rem" aria-hidden="true">
+										<use href="#icon-close"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="notification-item">
+					<div class="block" data-width="S">
+						<div class="flex" data-align="center" data-gap="M">
+							<div class="flex-item">
+								<p class="text">Your account has been permanently deleted</p>
+							</div>
+							<div class="flex-item">
+								<button type="button" class="button" data-type="secondary" aria-label="Close">
+									<svg class="icon" width="0.875rem" height="1.375rem" aria-hidden="true">
+										<use href="#icon-close"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Icons -->
+	<svg class="icon-root" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+		<symbol id="icon-chevron-down" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+		</symbol>
+		<symbol id="icon-chevron-right" viewBox="0 0 320 512">
+			<path fill="currentColor" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+		</symbol>
+		<symbol id="icon-close" viewBox="0 0 384 512">
+			<path fill="currentColor" d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z"/>
+		</symbol>
+		<symbol id="icon-menu" viewBox="0 0 448 512">
+			<path fill="currentColor" d="M0 88C0 74.7 10.7 64 24 64l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 112C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 272c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24L24 432c-13.3 0-24-10.7-24-24s10.7-24 24-24l400 0c13.3 0 24 10.7 24 24z"/>
+		</symbol>
+		<symbol id="icon-more" viewBox="0 0 448 512">
+			<path fill="currentColor" d="M432 256a48 48 0 1 1 -96 0 48 48 0 1 1 96 0zm-160 0a48 48 0 1 1 -96 0 48 48 0 1 1 96 0zM64 304a48 48 0 1 1 0-96 48 48 0 1 1 0 96z"/>
+		</symbol>
+		<symbol id="icon-rectangle" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M464 224c0-8.8-7.2-16-16-16L64 208c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-224zm-16-64c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64l384 0zm-8-80c13.3 0 24 10.7 24 24s-10.7 24-24 24L72 128c-13.3 0-24-10.7-24-24s10.7-24 24-24l368 0zM392 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L120 48c-13.3 0-24-10.7-24-24s10.7-24 24-24L392 0z"/>
+		</symbol>
+		<symbol id="icon-sun" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M280 24l0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-64c0-13.3 10.7-24 24-24s24 10.7 24 24zm157 84.9l-45.3 45.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L403.1 75c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM108.9 75l45.3 45.3c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L75 108.9c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0zM24 232l64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm400 0l64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zM154.2 391.8L108.9 437c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l45.3-45.3c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm237.6-33.9L437 403.1c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-45.3-45.3c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0zM280 424l0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-64c0-13.3 10.7-24 24-24s24 10.7 24 24zm40-168a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm-176 0a112 112 0 1 1 224 0 112 112 0 1 1 -224 0z"/>
+		</symbol>
+		<symbol id="icon-logout" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M505 273c9.4-9.4 9.4-24.6 0-33.9L377 111c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l87 87L184 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l246.1 0-87 87c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L505 273zM168 80c13.3 0 24-10.7 24-24s-10.7-24-24-24L88 32C39.4 32 0 71.4 0 120L0 392c0 48.6 39.4 88 88 88l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0c-22.1 0-40-17.9-40-40l0-272c0-22.1 17.9-40 40-40l80 0z"/>
+		</symbol>
+		<symbol id="icon-notifications" viewBox="0 0 448 512">
+			<path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416l400 0c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4l0-25.4c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112l0 25.4c0 47.9 13.9 94.6 39.7 134.6L72.3 368C98.1 328 112 281.3 112 233.4l0-25.4c0-61.9 50.1-112 112-112zm64 352l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/>
+		</symbol>
+		<symbol id="icon-account" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M200.3 81.5C210.9 61.5 231.9 48 256 48s45.1 13.5 55.7 33.5C317.1 91.7 329 96.6 340 93.2c21.6-6.6 46.1-1.4 63.1 15.7s22.3 41.5 15.7 63.1c-3.4 11 1.5 22.9 11.7 28.2c20 10.6 33.5 31.6 33.5 55.7s-13.5 45.1-33.5 55.7c-10.2 5.4-15.1 17.2-11.7 28.2c6.6 21.6 1.4 46.1-15.7 63.1s-41.5 22.3-63.1 15.7c-11-3.4-22.9 1.5-28.2 11.7c-10.6 20-31.6 33.5-55.7 33.5s-45.1-13.5-55.7-33.5c-5.4-10.2-17.2-15.1-28.2-11.7c-21.6 6.6-46.1 1.4-63.1-15.7S86.6 361.6 93.2 340c3.4-11-1.5-22.9-11.7-28.2C61.5 301.1 48 280.1 48 256s13.5-45.1 33.5-55.7C91.7 194.9 96.6 183 93.2 172c-6.6-21.6-1.4-46.1 15.7-63.1S150.4 86.6 172 93.2c11 3.4 22.9-1.5 28.2-11.7zM256 0c-35.9 0-67.8 17-88.1 43.4c-33-4.3-67.6 6.2-93 31.6s-35.9 60-31.6 93C17 188.2 0 220.1 0 256s17 67.8 43.4 88.1c-4.3 33 6.2 67.6 31.6 93s60 35.9 93 31.6C188.2 495 220.1 512 256 512s67.8-17 88.1-43.4c33 4.3 67.6-6.2 93-31.6s35.9-60 31.6-93C495 323.8 512 291.9 512 256s-17-67.8-43.4-88.1c4.3-33-6.2-67.6-31.6-93s-60-35.9-93-31.6C323.8 17 291.9 0 256 0zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/>
+		</symbol>
+	</svg>
+</body>
+</html>
